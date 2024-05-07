@@ -2,86 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://luojing94.github.io/posts/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://luojing94.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://luojing94.github.io/"
-                />
-  </url><url>
-    <loc>https://luojing94.github.io/2024/04/toc/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/04/toc2/</loc>
-    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/04/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/03/fengxian/</loc>
-    <lastmod>2024-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/03/shiwu/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://luojing94.github.io/2024/03/cv/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luojing94.github.io/2024/03/zhongan/</loc>
+    <loc>https://luojing94.github.io/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luojing94.github.io/2024/03/poem/</loc>
-    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/03/jixiao/</loc>
-    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luojing94.github.io/2024/02/dayangshan-slow/</loc>
-    <lastmod>2024-02-15T00:00:00+00:00</lastmod>
+    <loc>https://luojing94.github.io/posts/</loc>
+    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luojing94.github.io/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://luojing94.github.io/es/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://luojing94.github.io/archives/"
-                />
   </url><url>
     <loc>https://luojing94.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://luojing94.github.io/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://luojing94.github.io/categories/"
-                />
   </url><url>
     <loc>https://luojing94.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://luojing94.github.io/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://luojing94.github.io/tags/"
-                />
   </url>
 </urlset>
