@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>罗晶</title>
+    <title>Welcome to My Blog on 罗晶</title>
     <link>https://luojing94.github.io/</link>
-    <description>Recent content on 罗晶</description>
+    <description>Recent content in Welcome to My Blog on 罗晶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
@@ -77,6 +77,13 @@
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/02/dayangshan-slow/</guid>
       <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>zh</title>
+      <link>https://luojing94.github.io/1/01/zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luojing94.github.io/1/01/zh/</guid>
+      <description>&lt;p&gt;CV&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
