@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>Welcome to My Blog on 罗晶</title>
     <link>https://luojing94.github.io/</link>
     <description>Recent content in Welcome to My Blog on 罗晶</description>
+=======
+    <title>博客 on 罗晶</title>
+    <link>https://luojing94.github.io/</link>
+    <description>Recent content in 博客 on 罗晶</description>
+>>>>>>> 69721e7 (...(修改的信息))
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://luojing94.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>activity</title>
+      <link>https://luojing94.github.io/2024/04/activity/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://luojing94.github.io/2024/04/activity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>toc</title>
       <link>https://luojing94.github.io/2024/04/toc/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/04/toc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>work</title>
+      <link>https://luojing94.github.io/2024/04/work/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://luojing94.github.io/2024/04/work/</guid>
       <description></description>
     </item>
     <item>
@@ -34,16 +54,17 @@
       <link>https://luojing94.github.io/2024/03/fengxian/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/03/fengxian/</guid>
-      <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+      <description> </description>
     </item>
     <item>
       <title>shiwu</title>
       <link>https://luojing94.github.io/2024/03/shiwu/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/03/shiwu/</guid>
-      <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+      <description> </description>
     </item>
     <item>
+<<<<<<< HEAD
       <title>WORK</title>
       <link>https://luojing94.github.io/2024/03/work/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
@@ -53,8 +74,12 @@
     <item>
       <title>CV</title>
       <link>https://luojing94.github.io/2024/03/cv/</link>
+=======
+      <title></title>
+      <link>https://luojing94.github.io/2024/03/</link>
+>>>>>>> 69721e7 (...(修改的信息))
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://luojing94.github.io/2024/03/cv/</guid>
+      <guid>https://luojing94.github.io/2024/03/</guid>
       <description>&lt;p&gt;CV&lt;/p&gt;</description>
     </item>
     <item>
@@ -62,7 +87,7 @@
       <link>https://luojing94.github.io/2024/03/zhongan/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/03/zhongan/</guid>
-      <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+      <description></description>
     </item>
     <item>
       <title>Poem</title>
@@ -76,14 +101,21 @@
       <link>https://luojing94.github.io/2024/03/jixiao/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/03/jixiao/</guid>
-      <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+      <description></description>
     </item>
     <item>
       <title>Dayangshan Slow</title>
       <link>https://luojing94.github.io/2024/02/dayangshan-slow/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://luojing94.github.io/2024/02/dayangshan-slow/</guid>
-      <description>&lt;p&gt;Dayangshan Slow Travel System Design&lt;/p&gt;</description>
+      <description> </description>
+    </item>
+    <item>
+      <title>zh</title>
+      <link>https://luojing94.github.io/1/01/zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luojing94.github.io/1/01/zh/</guid>
+      <description>&lt;p&gt;CV&lt;/p&gt;</description>
     </item>
     <item>
       <title>zh</title>
