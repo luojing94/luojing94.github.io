@@ -4,10 +4,13 @@
     
     <script type="application/ld+json">
 
-{  
-  "@context":"http://schema.org",
-  "@type":"Website",
-  "@id":"https:\/\/luojing94.github.io\/en\/",
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  
+  "datePublished": "2016-05-13T00:00:00Z",
+  "dateModified": "2016-05-13T00:00:00Z",
   "author": {
     "@type": "Person",
     "name": "Jing LUO",
@@ -15,10 +18,22 @@
     "image": "https://res.cloudinary.com/dgcbpbbk3/image/upload/v1711375628/29001709741638_.pic_vf1dkq.jpg"
     
   },
-  "name":"Jing LUO",
-  "description":"Hugo tranquilpeak theme demo",
-  "url":"https:\/\/luojing94.github.io\/en\/",
-  "keywords":"[]"
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/luojing94.github.io\/en\/2016\/05\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jing LUO",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/dgcbpbbk3/image/upload/v1711375628/29001709741638_.pic_vf1dkq.jpg"
+    }
+    
+  },
+  "description": " \u003c!DOCTYPE html\u003e 石屋设计 ",
+  "keywords": []
 }
 
 </script>
@@ -28,19 +43,29 @@
 <meta name="generator" content="Hugo 0.121.2 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="Jing LUO">
 <meta name="keywords" content="">
-<meta name="description" content="Hugo tranquilpeak theme demo">
+<meta name="description" content=" &lt;!DOCTYPE html&gt; 石屋设计 ">
 
 
-<meta property="og:description" content="Hugo tranquilpeak theme demo">
-<meta property="og:type" content="website">
+<meta property="og:description" content=" &lt;!DOCTYPE html&gt; 石屋设计 ">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Jing LUO">
 <meta name="twitter:title" content="Jing LUO">
-<meta property="og:url" content="https://luojing94.github.io/en/">
-<meta property="twitter:url" content="https://luojing94.github.io/en/">
+<meta property="og:url" content="https://luojing94.github.io/en/2016/05/">
+<meta property="twitter:url" content="https://luojing94.github.io/en/2016/05/">
 <meta property="og:site_name" content="Jing LUO">
-<meta property="og:description" content="Hugo tranquilpeak theme demo">
-<meta name="twitter:description" content="Hugo tranquilpeak theme demo">
+<meta property="og:description" content=" &lt;!DOCTYPE html&gt; 石屋设计 ">
+<meta name="twitter:description" content=" &lt;!DOCTYPE html&gt; 石屋设计 ">
 <meta property="og:locale" content="en">
+
+  
+    <meta property="article:published_time" content="2016-05-13T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2016-05-13T00:00:00">
+  
+  
+  
+  
 
 
 <meta name="twitter:card" content="summary">
@@ -63,12 +88,10 @@
 
     <link rel="icon" href="https://luojing94.github.io/en/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://luojing94.github.io/en/index.xml">
-    
 
     
 
-    <link rel="canonical" href="https://luojing94.github.io/en/">
+    <link rel="canonical" href="https://luojing94.github.io/en/2016/05/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,7 +111,7 @@
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="2">
+      <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://luojing94.github.io/en/" aria-label="">Jing LUO</a>
@@ -108,7 +131,7 @@
   
 </header>
 
-      <nav id="sidebar" data-behavior="2">
+      <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -208,20 +231,25 @@
 
       
 
-      <div id="main" data-behavior="2"
+      <div id="main" data-behavior="5"
         class="
                hasCoverMetaIn
                ">
         <article class="post" id="top">
           
           
-            <div class="post-header main-content-wrap text-center">
+            <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
       
     </h1>
   
   
+  <div class="postShorten-meta post-meta">
+    
+    
+  </div>
+
 </div>
           
           <div class="post-content markdown">
@@ -233,23 +261,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客主页</title>
     <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            background-image: url('https://res.cloudinary.com/dgcbpbbk3/image/upload/v1720365920/Clouds___px4yrr.jpg'); /* 替换为你的背景图片URL */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
+            animation: fadeIn 1s ease-in;
         }
-        .page-title {
-        font-size: 2.5em; /* 调整标题的字体大小 */
+                        .blog-title {
+    font-size: 2.5em; /* 调整标题的字体大小 */
     font-weight: bold; /* 加粗标题 */
     color: #333; /* 设置标题的颜色，#333 是深灰色 */
     text-align: center; /* 将标题居中对齐 */
@@ -260,101 +291,19 @@
     background-color: #f7f7f7; /* 设置背景颜色，轻微的灰色背景让标题突出 */
     border-radius: 8px; /* 给标题背景添加圆角 */
 }
-
-        .main-image, .link-image, .gallery-image {
-            width: 80%;
-            max-width: 800px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .link-image {
-            width: 50%;
-            max-width: 400px;
-        }
-        .link-container {
-            text-align: center;
-        }
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px 0;
-        }
-        .gallery-row {
-            display: flex;
-            justify-content: center;
-            gap: 40px; /* 增加图片之间的间距 */
-            width: 100%;
-            margin-bottom: 40px; /* 增加行之间的间距 */
-        }
-        .gallery-item {
-            flex: 1 1 45%; /* 调整图片宽度 */
-            text-align: center;
-            max-width: 45%;
-        }
-        .gallery-item img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-item p {
-            text-align: center;
-            margin: 5px 0 0 0;
-            font-size: 1.1em;
-            color: #333;
-        }
     </style>
 </head>
 <body>
-<h1 class="page-title">罗晶的个人博客</h1>
-    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/v1711375686/28981709741004_.pic_hd_no2otz.jpg" alt="主要图片" class="main-image">
-    
-    <div class="link-container">
-        <a href="https://luojing94.github.io/en/2024/04/toc/">
-            <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1711375665/28951709740915_.pic_hd_xasdjf.jpg" alt="简历图片" class="link-image">
-        </a>
-        <p>简历</p>
-    </div>
-    
-    <div class="gallery">
-        <div class="gallery-row">
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/en/2024/04/work/">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1720365065/WechatIMG3297_od2irw.png" alt="作品图片" class="gallery-image">
-                </a>
-                <p>作品</p>
-            </div>
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/en/2024/03/">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1719548225/5f3c8625-355a-4b34-932d-08ee7f255244_bvhx7m.jpg" alt="科研工作图片" class="gallery-image">
-                </a>
-                <p>科研工作</p>
-            </div>
-        </div>
-        <div class="gallery-row">
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/en/2024/04">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1711375655/28991709741027_.pic_hd_jb4fue.jpg" alt="诗歌图片" class="gallery-image">
-                </a>
-                <p>诗歌</p>
-            </div>
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/en/2024/04/activity">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1720365055/1df8dffb-7ca7-415f-8395-63f180d5d51c_bzpoxe.jpg" alt="活动图片" class="gallery-image">
-                </a>
-                <p>活动</p>
-            </div>
-        </div>
-    </div>
-</body>
+<body>
+<h1 class="blog-title">石屋设计</h1>
+   </body>
 </html>
 
 
 
 
+<hr>
+<p><img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/v1712137546/%E7%9F%B3%E5%B1%8B%E8%AE%BE%E8%AE%A1_00_hv0pru.jpg" alt="" title=""></p>
 
               
 
@@ -366,8 +315,101 @@
               
             
             
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://luojing94.github.io/en/2017/03/" data-tooltip="" aria-label=": ">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml"></span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://luojing94.github.io/en/2016/04/" data-tooltip="" aria-label=": ">
+          
+              <span class="hide-xs hide-sm text-small icon-mr"></span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
 
             
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/luojing94.github.io\/en\/2016\/05\/';
+        
+          this.page.identifier = '\/2016\/05\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
 
           </div>
         </article>
@@ -378,29 +420,96 @@
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="2">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://luojing94.github.io/en/2017/03/" data-tooltip="" aria-label=": ">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml"></span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://luojing94.github.io/en/2016/04/" data-tooltip="" aria-label=": ">
+          
+              <span class="hide-xs hide-sm text-small icon-mr"></span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://luojing94.github.io/en/2016/05/" title="" aria-label="">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
 
       </div>
       
-<div id="share-options-bar" class="share-options-bar" data-behavior="2">
+<div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <i id="btn-close-shareoptions" class="fa fa-times"></i>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fluojing94.github.io%2Fen%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fluojing94.github.io%2Fen%2F2016%2F05%2F" aria-label="">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span></span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fluojing94.github.io%2Fen%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fluojing94.github.io%2Fen%2F2016%2F05%2F" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i><span></span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fluojing94.github.io%2Fen%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fluojing94.github.io%2Fen%2F2016%2F05%2F" aria-label="">
           <i class="fab fa-linkedin" aria-hidden="true"></i><span></span>
         </a>
       </li>
@@ -519,3 +628,4 @@ $(document).ready(function() {
     
   </body>
 </html>
+
