@@ -233,126 +233,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客主页</title>
+    <title>罗晶的个人博客</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            background-image: url('https://res.cloudinary.com/dgcbpbbk3/image/upload/v1720365920/Clouds___px4yrr.jpg'); /* 替换为你的背景图片URL */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
-        }
-        .page-title {
-        font-size: 2.5em; /* 调整标题的字体大小 */
-    font-weight: bold; /* 加粗标题 */
-    color: #333; /* 设置标题的颜色，#333 是深灰色 */
-    text-align: center; /* 将标题居中对齐 */
-    margin-top: 20px; /* 设置标题与页面顶部的间距 */
-    margin-bottom: 20px; /* 设置标题与下方内容的间距 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 添加文字阴影 */
-    padding: 10px; /* 添加内边距，让标题与容器有一定距离 */
-    background-color: #f7f7f7; /* 设置背景颜色，轻微的灰色背景让标题突出 */
-    border-radius: 8px; /* 给标题背景添加圆角 */
-}
-
-        .main-image, .link-image, .gallery-image {
-            width: 80%;
-            max-width: 800px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .link-image {
-            width: 50%;
-            max-width: 400px;
-        }
-        .link-container {
-            text-align: center;
-        }
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px 0;
-        }
-        .gallery-row {
-            display: flex;
-            justify-content: center;
-            gap: 40px; /* 增加图片之间的间距 */
-            width: 100%;
-            margin-bottom: 40px; /* 增加行之间的间距 */
-        }
-        .gallery-item {
-            flex: 1 1 45%; /* 调整图片宽度 */
-            text-align: center;
-            max-width: 45%;
-        }
-        .gallery-item img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-item p {
-            text-align: center;
-            margin: 5px 0 0 0;
-            font-size: 1.1em;
             color: #333;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin: 10px 0;
+        }
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 10px 0; /* 去掉水平居中对齐的 auto */
+    color: #555;
+    max-width: 800px; /* 可选：保留限制宽度，但不再居中 */
+    text-align: left; /* 设置文本左对齐 */
+}
+        .content {
+            width: 40%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+       .content img {
+        width: 5%; /* 将图片宽度设为 5% */
+        max-width: 50px; /* 限制最大宽度 */
+        border-radius: 4px; /* 圆角 */
+        margin: 8px auto; /* 上下间距 */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* 阴影效果 */
+        transition: transform 0.3s, box-shadow 0.3s; /* 动态效果 */
+    }
+    .content img:hover {
+        transform: scale(1.02); /* 鼠标悬停时轻微放大 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* 鼠标悬停时增强阴影 */
+    }
+        .contact {
+            margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.8;
+            color: #555;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-<h1 class="page-title">罗晶的个人博客</h1>
-    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/v1711375686/28981709741004_.pic_hd_no2otz.jpg" alt="主要图片" class="main-image">
-    
-    <div class="link-container">
-        <a href="https://luojing94.github.io/2024/04/toc/">
-            <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1711375665/28951709740915_.pic_hd_xasdjf.jpg" alt="简历图片" class="link-image">
-        </a>
-        <p>简历</p>
+    <!-- 顶部头像 -->
+    <h1>罗晶</h1>
+    <div class="content">
+        <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/v1720368296/WechatIMG1113_tmbhjk.jpg" alt="个人博客图片">
     </div>
+       <h2>关于我</h2>
+<p>我是在 <a href="https://www.shnu.edu.cn" target="_blank" style="color: #007BFF; text-decoration: none;">上海师范大学</a> 建筑与工程学院的一名讲师。我的研究方向主要是低碳木结构、结构抗火设计理论、历史建筑、人工智能在建筑领域的应用。</p>
+    <p>我主要教授....</p>
+    <p>在这里，我会分享我的科研工作、文学作品以及生活的思考。还有课件......</p>
     
-    <div class="gallery">
-        <div class="gallery-row">
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/2024/04/work/">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1720365065/WechatIMG3297_od2irw.png" alt="作品图片" class="gallery-image">
-                </a>
-                <p>作品</p>
-            </div>
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/2024/03/">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1719548225/5f3c8625-355a-4b34-932d-08ee7f255244_bvhx7m.jpg" alt="科研工作图片" class="gallery-image">
-                </a>
-                <p>科研工作</p>
-            </div>
-        </div>
-        <div class="gallery-row">
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/2024/04">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1711375655/28991709741027_.pic_hd_jb4fue.jpg" alt="诗歌图片" class="gallery-image">
-                </a>
-                <p>诗歌</p>
-            </div>
-            <div class="gallery-item">
-                <a href="https://luojing94.github.io/2024/04/activity">
-                    <img src="https://res.cloudinary.com/dgcbpbbk3/image/upload/t_Banner 16:9/v1720365055/1df8dffb-7ca7-415f-8395-63f180d5d51c_bzpoxe.jpg" alt="活动图片" class="gallery-image">
-                </a>
-                <p>活动</p>
-            </div>
-        </div>
+    <div class="contact">
+        <h2>联系方式</h2>
+        <p>邮箱: <a href="mailto:luojing@example.com">luojing94@shnu.edu.cn</a></p>
+        <p>地址: 上海市徐汇区桂林路123号 某某办公楼xxx室</p>
+
     </div>
 </body>
 </html>
-
-
 
 
 
@@ -373,7 +330,7 @@
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2024 罗晶. All Rights Reserved
+    &copy; 2025 罗晶. All Rights Reserved
   </span>
 </footer>
 
