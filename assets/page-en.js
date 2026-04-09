@@ -49,9 +49,26 @@ function applyEnglishPage() {
   if (heroContact[1]) heroContact[1].textContent = "100 Haisi Road, Shanghai Normal University, Shanghai";
 
   var statLabels = document.querySelectorAll(".stat-label");
-  var statTexts = ["Research and Teaching Outputs", "Projects Led as Principal Investigator", "Software Copyrights", "K-12 Educational Initiatives"];
+  var statTexts = ["Publications", "Projects Led", "Honors and Awards", "Works", "Poems", "K-12 Educational Initiatives"];
   statLabels.forEach(function(item, index) {
     if (statTexts[index]) item.textContent = statTexts[index];
+  });
+  var statNums = document.querySelectorAll(".stat-num");
+  var statValues = ["39", "12", "33", "5", "47", "18"];
+  statNums.forEach(function(item, index) {
+    if (statValues[index]) item.textContent = statValues[index];
+  });
+  var statLinks = document.querySelectorAll(".hero-stats .stat-link");
+  var statHrefs = [
+    "/en/cv/#cv-publications-content",
+    "/en/cv/#hosted-research-projects",
+    "/en/cv/#research-awards",
+    "/en/works/#works-showcase",
+    "/en/poems/#poems-content",
+    "/en/activities/#k12-courses"
+  ];
+  statLinks.forEach(function(link, index) {
+    if (statHrefs[index]) link.href = statHrefs[index];
   });
 
   var cvHeader = document.querySelector("#sec-cv .page-header h2");

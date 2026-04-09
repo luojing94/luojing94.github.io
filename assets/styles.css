@@ -308,13 +308,24 @@ body {
   margin: 0 auto;
   padding: 0 40px 60px;
 }
+.stat-link {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .stat-item {
   flex: 1;
   text-align: center;
   padding: 24px 16px;
   border-right: 1px solid rgba(201,169,110,.15);
+  transition: background var(--transit), transform var(--transit);
 }
 .stat-item:last-child { border-right: none; }
+.stat-link:hover .stat-item {
+  background: rgba(255,255,255,.04);
+  transform: translateY(-2px);
+}
 .stat-num {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
@@ -1337,7 +1348,8 @@ body {
 
 @media (max-width: 480px) {
   .hero-stats { flex-wrap: wrap; }
-  .stat-item { flex: 0 0 50%; }
+  .stat-link { flex: 0 0 50%; }
+  .stat-item { flex: 0 0 100%; }
   .poem-card.xiaohan { grid-template-columns: 1fr; }
   .xiaohan-item { border-right: none; border-bottom: 1px dashed var(--border); }
 }
