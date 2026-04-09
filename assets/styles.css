@@ -26,6 +26,7 @@ body {
   color: var(--ink);
   line-height: 1.7;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /* ===================== SCROLLBAR ===================== */
@@ -287,7 +288,7 @@ body {
 }
 .hero-contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   color: rgba(255,255,255,.7);
   font-size: .9rem;
@@ -297,6 +298,7 @@ body {
 .email-obfuscated {
   color: var(--gold2);
   letter-spacing: .02em;
+  overflow-wrap: anywhere;
 }
 .contact-icon {
   width: 20px; height: 20px;
@@ -547,6 +549,7 @@ body {
   font-size: .9rem;
   color: var(--muted);
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 .work-link {
   display: inline-flex;
@@ -775,6 +778,7 @@ body {
   color: #444;
   line-height: 2.0;
   white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 .poem-note {
   margin-top: 14px;
@@ -784,6 +788,7 @@ body {
   font-style: italic;
   border-top: 1px dashed var(--border);
   padding-top: 12px;
+  overflow-wrap: anywhere;
 }
 .poem-author {
   font-size: .78rem;
@@ -888,6 +893,7 @@ body {
   font-size: .87rem;
   color: var(--muted);
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 .activity-meta {
   font-size: .78rem;
@@ -946,6 +952,7 @@ body {
   font-size: .88rem;
   color: var(--muted);
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 .pub-text strong {
   color: var(--ink);
@@ -1077,6 +1084,7 @@ body {
   color: var(--muted);
   line-height: 1.9;
   max-width: 56ch;
+  overflow-wrap: anywhere;
 }
 
 .project-actions {
@@ -1192,6 +1200,7 @@ body {
   color: var(--ink);
   font-size: .9rem;
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .project-plate-card {
@@ -1283,6 +1292,7 @@ body {
   font-size: .96rem;
   color: var(--navy);
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 /* ===================== FOOTER ===================== */
@@ -1302,6 +1312,7 @@ body {
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 860px) {
   #nav { padding: 0 20px; }
+  .nav-logo { font-size: 1rem; max-width: calc(100vw - 168px); overflow: hidden; text-overflow: ellipsis; }
   .nav-links { display: none; }
   .nav-actions { gap: 10px; }
   .hamburger { display: flex; }
@@ -1309,25 +1320,55 @@ body {
   .hero-inner { flex-direction: column; gap: 32px; padding: 48px 24px 36px; }
   .hero-photo { width: min(180px, 56vw); }
   .hero-text h1 { font-size: 2rem; }
+  .hero-text { width: 100%; }
+  .hero-text .bio { max-width: none; }
+  .hero-contact-item { font-size: .86rem; line-height: 1.7; }
   .hero-stats { padding: 0 20px 40px; gap: 0; }
   .stat-num { font-size: 1.6rem; }
+  .stat-item { padding: 20px 12px; }
+  .stat-label { font-size: .76rem; }
 
   .content-wrap { padding: 32px 20px 60px; }
   .page-header { padding: 36px 20px 30px; }
+  .page-header h2 { font-size: 1.65rem; }
+  .page-header .sub { font-size: .76rem; letter-spacing: .08em; }
 
   .cv-grid { grid-template-columns: 1fr; }
   .cv-card-full { grid-column: 1; }
+  .cv-card { padding: 22px 20px 18px; }
+  .cv-card ul li,
+  .cv-card ol li,
+  .award-text,
+  .pub-text { font-size: .85rem; line-height: 1.7; }
+  .award-year { font-size: .72rem; }
 
   .work-card { flex-direction: column; }
   .work-img { width: 100%; height: 200px; }
+  .work-body { padding: 22px 20px; }
+  .work-body h3 { font-size: 1.16rem; }
+  .work-body p { font-size: .86rem; }
 
   .activity-card { flex-direction: column; }
   .activity-img { width: 100%; height: 180px; }
+  .activity-body { padding: 20px; }
+  .activity-body h3 { font-size: .98rem; }
+  .activity-body p { font-size: .84rem; }
 
   .poems-grid,
   .poems-archive,
   .poem-series { grid-template-columns: 1fr; }
   .poem-card.xiaohan { grid-column: 1; grid-template-columns: 1fr 1fr; }
+  .poem-panel,
+  .poem-card { padding: 24px 20px; }
+  .poem-intro { padding: 22px 20px; border-radius: 18px; }
+  .poem-intro::after { font-size: 5rem; right: 14px; top: -10px; }
+  .poem-title { font-size: 1rem; margin-bottom: 14px; padding-bottom: 10px; }
+  .poem-subhead { font-size: .92rem; }
+  .poem-body { font-size: .88rem; line-height: 1.95; }
+  .poem-note,
+  .poem-preface,
+  .poem-sequence-item { font-size: .82rem; }
+  .poem-series-item { padding: 16px 14px; }
 
   .project-hero-section,
   .project-detail-section,
@@ -1347,13 +1388,108 @@ body {
   .project-plate-card { padding: 20px; }
   .project-plate-head { flex-direction: column; align-items: start; }
   .project-plate-head p { text-align: left; }
+  .project-summary-card { padding: 20px; }
+  .project-summary { font-size: .92rem; line-height: 1.8; }
+  .project-button { min-height: 42px; padding: 0 16px; font-size: .86rem; }
+  .project-pager-card { min-height: 96px; padding: 16px 18px; }
 
 }
 
 @media (max-width: 480px) {
+  #nav { padding: 0 14px; }
+  .nav-logo { font-size: .92rem; max-width: calc(100vw - 132px); }
+  .lang-switch { padding: 3px; }
+  .lang-link { min-width: 38px; padding: 6px 9px; font-size: .72rem; }
+  #mobile-menu { padding: 14px 16px 18px; }
+  #mobile-menu a { font-size: .9rem; padding: 11px 0; }
+
+  .hero-inner { padding: 38px 16px 28px; gap: 24px; }
+  .hero-photo { width: min(172px, 62vw); border-width: 3px; border-radius: 16px; }
+  .hero-text h1 { font-size: 1.75rem; }
+  .hero-text .subtitle { font-size: .84rem; margin-bottom: 18px; }
+  .hero-text .bio { font-size: .87rem; line-height: 1.82; margin-bottom: 24px; }
+  .hero-tags { gap: 6px; margin-bottom: 24px; }
+  .hero-tag { font-size: .76rem; padding: 4px 10px; }
+  .hero-contact-item { gap: 8px; font-size: .82rem; }
+
   .hero-stats { flex-wrap: wrap; }
   .stat-link { flex: 0 0 50%; }
   .stat-item { flex: 0 0 100%; }
+  .stat-item { padding: 16px 10px; }
+  .stat-num { font-size: 1.4rem; }
+  .stat-label { font-size: .72rem; letter-spacing: .03em; }
+
+  .content-wrap { padding: 24px 14px 48px; }
+  .page-header { padding: 28px 14px 24px; }
+  .page-header h2 { font-size: 1.46rem; }
+  .page-header .sub { font-size: .72rem; }
+
+  .cv-card { padding: 18px 16px 16px; border-radius: 10px; }
+  .cv-card h3 { font-size: .94rem; margin-bottom: 12px; }
+  .cv-card ul li,
+  .cv-card ol li,
+  .award-text,
+  .pub-text { font-size: .82rem; line-height: 1.72; }
+  .award-item { gap: 8px; }
+  .award-year { padding: 1px 6px; }
+
+  .work-img { height: 168px; }
+  .work-body { padding: 18px 16px; }
+  .work-num { font-size: .68rem; margin-bottom: 8px; }
+  .work-body h3 { font-size: 1.04rem; margin-bottom: 10px; }
+  .work-body p { font-size: .83rem; }
+  .work-link { margin-top: 14px; font-size: .8rem; }
+
+  .activity-img { height: 156px; }
+  .activity-body { padding: 16px; gap: 6px; }
+  .activity-body h3 { font-size: .92rem; }
+  .activity-body p { font-size: .82rem; line-height: 1.68; }
+  .activity-meta { font-size: .72rem; }
+
+  .poem-panel,
+  .poem-card { padding: 18px 16px; border-radius: 14px; }
+  .poem-intro { padding: 18px 16px; border-radius: 16px; }
+  .poem-intro::after { font-size: 3.8rem; right: 10px; top: -6px; }
+  .poem-intro h3 { font-size: 1.28rem; margin-bottom: 4px; }
+  .poem-title { font-size: .96rem; }
+  .poem-subhead { font-size: .88rem; margin: 14px 0 8px; }
+  .poem-source { font-size: .72rem; margin-bottom: 6px; }
+  .poem-body { font-size: .84rem; line-height: 1.88; }
+  .poem-note,
+  .poem-preface,
+  .poem-sequence-item { font-size: .78rem; line-height: 1.82; }
+  .poem-series { gap: 12px; }
+  .poem-series-item { padding: 14px 12px; border-radius: 12px; }
   .poem-card.xiaohan { grid-template-columns: 1fr; }
   .xiaohan-item { border-right: none; border-bottom: 1px dashed var(--border); }
+
+  .project-hero-section,
+  .project-detail-section,
+  .project-pager { padding-left: 14px; padding-right: 14px; }
+  .project-copy-card,
+  .project-image-card,
+  .project-summary-card,
+  .project-plate-card,
+  .project-pager-card { border-radius: 16px; }
+  .project-copy-card { padding: 20px 16px 18px; }
+  .project-breadcrumb { gap: 6px; margin-bottom: 18px; font-size: .74rem; }
+  .project-kicker { margin-bottom: 14px; font-size: .7rem; padding: 6px 10px; }
+  .project-title { font-size: 1.5rem; }
+  .project-subtitle { font-size: .8rem; letter-spacing: .05em; margin-bottom: 14px; }
+  .project-summary { font-size: .86rem; line-height: 1.76; }
+  .project-actions { gap: 10px; margin-top: 20px; }
+  .project-button { width: 100%; }
+  .project-image-card { padding: 10px; }
+  .project-summary-card { padding: 16px; }
+  .project-summary-card h2,
+  .project-plate-head h2 { font-size: 1.08rem; }
+  .project-meta-label { font-size: .68rem; }
+  .project-meta-value { font-size: .84rem; }
+  .project-plate-card { padding: 16px; }
+  .project-plate-head { gap: 10px; margin-bottom: 14px; }
+  .project-plate-head p { font-size: .78rem; }
+  .project-pager { gap: 12px; padding-bottom: 48px; }
+  .project-pager-card { min-height: auto; padding: 14px 14px; }
+  .project-pager-label { font-size: .68rem; }
+  .project-pager-card strong { font-size: .88rem; }
 }
