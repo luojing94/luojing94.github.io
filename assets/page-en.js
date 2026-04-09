@@ -7,7 +7,7 @@ function applyEnglishPage() {
     "nav-cv": "CV",
     "nav-works": "Works",
     "nav-poems": "Poetry",
-    "nav-activities": "K12 Education",
+    "nav-activities": "K-12 Education",
     "nav-publications": "Publications"
   };
 
@@ -19,7 +19,7 @@ function applyEnglishPage() {
   var mobileMenu = document.getElementById("mobile-menu");
   if (mobileMenu) {
     var links = mobileMenu.querySelectorAll("a");
-    var labels = ["Home", "CV", "Works", "Poetry", "K12 Education", "Publications"];
+    var labels = ["Home", "CV", "Works", "Poetry", "K-12 Education", "Publications"];
     links.forEach(function(link, index) {
       if (index >= 2 && labels[index - 2]) link.textContent = labels[index - 2];
     });
@@ -32,11 +32,11 @@ function applyEnglishPage() {
   if (heroName) heroName.textContent = "Jing LUO";
 
   var heroSubtitle = document.querySelector(".hero-text .subtitle");
-  if (heroSubtitle) heroSubtitle.textContent = "Associate Professor | Ph.D. in Civil Engineering";
+  if (heroSubtitle) heroSubtitle.textContent = "Associate Professor · Ph.D. in Civil Engineering";
 
   var heroBio = document.querySelector(".hero-text .bio");
   if (heroBio) {
-    heroBio.textContent = "Jing Luo received her Ph.D. in Civil Engineering from Tongji University and is currently an Associate Professor at Shanghai Normal University. Her research spans timber and bamboo structures, structural fire performance, engineering education, project-based learning, historic architecture, and public-facing science education. She has been recognized as a Shanghai Sailing Talent and a Shicheng Outstanding Young Faculty member, and serves as principal investigator on projects supported by the National Natural Science Foundation of China and the Shanghai Rising-Star Program.";
+    heroBio.textContent = "Jing Luo is Associate Professor at Shanghai Normal University and holds a Ph.D. in Civil Engineering from Tongji University. Her work focuses on timber and bamboo-composite structures, structural fire performance, engineering education, project-based learning, historic architecture, and public-facing science education. She has been recognized as a Shanghai Sailing Talent and a Shicheng Outstanding Young Faculty member, and serves as principal investigator on projects funded by the National Natural Science Foundation of China and the Shanghai Rising-Star Program.";
   }
 
   var heroTags = document.querySelectorAll(".hero-tag");
@@ -49,7 +49,7 @@ function applyEnglishPage() {
   if (heroContact[1]) heroContact[1].textContent = "100 Haisi Road, Shanghai Normal University, Shanghai";
 
   var statLabels = document.querySelectorAll(".stat-label");
-  var statTexts = ["Publications and Teaching Outputs", "Projects as Principal Investigator", "Software Copyrights", "K12 Educational Initiatives"];
+  var statTexts = ["Research and Teaching Outputs", "Projects Led as Principal Investigator", "Software Copyrights", "K-12 Educational Initiatives"];
   statLabels.forEach(function(item, index) {
     if (statTexts[index]) item.textContent = statTexts[index];
   });
@@ -57,12 +57,12 @@ function applyEnglishPage() {
   var cvHeader = document.querySelector("#sec-cv .page-header h2");
   if (cvHeader) cvHeader.textContent = "Curriculum Vitae";
   var cvSub = document.querySelector("#sec-cv .page-header .sub");
-  if (cvSub) cvSub.textContent = "Academic Profile";
+  if (cvSub) cvSub.textContent = "Academic Profile and Professional Record";
 
   var worksHeader = document.querySelector("#sec-works .page-header h2");
   if (worksHeader) worksHeader.textContent = "Selected Works";
   var worksSub = document.querySelector("#sec-works .page-header .sub");
-  if (worksSub) worksSub.textContent = "Design and Creative Portfolio";
+  if (worksSub) worksSub.textContent = "Design Portfolio";
 
   var workTitles = [
     "Stone House Design",
@@ -91,17 +91,17 @@ function applyEnglishPage() {
   var poemsHeader = document.querySelector("#sec-poems .page-header h2");
   if (poemsHeader) poemsHeader.textContent = "Poetry";
   var poemsSub = document.querySelector("#sec-poems .page-header .sub");
-  if (poemsSub) poemsSub.textContent = "Classical Chinese Verse";
+  if (poemsSub) poemsSub.textContent = "Classical Chinese Poetry";
 
   var activitiesHeader = document.querySelector("#sec-activities .page-header h2");
-  if (activitiesHeader) activitiesHeader.textContent = "K12 Education";
+  if (activitiesHeader) activitiesHeader.textContent = "K-12 Education";
   var activitiesSub = document.querySelector("#sec-activities .page-header .sub");
-  if (activitiesSub) activitiesSub.textContent = "Engineering, Science, and Public Engagement";
+  if (activitiesSub) activitiesSub.textContent = "Engineering Education, Outreach, and Public Engagement";
 
   var pubsHeader = document.querySelector("#sec-publications .page-header h2");
   if (pubsHeader) pubsHeader.textContent = "Publications";
   var pubsSub = document.querySelector("#sec-publications .page-header .sub");
-  if (pubsSub) pubsSub.textContent = "Research Output";
+  if (pubsSub) pubsSub.textContent = "Journal Articles, Conference Papers, and Education Research";
 
   var footer = document.querySelector(".site-footer p");
   if (footer) {

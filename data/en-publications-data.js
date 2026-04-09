@@ -58,7 +58,7 @@ window.sitePublicationsData = {
       ]
     },
     {
-      title: "Educational Research",
+      title: "Education Research",
       items: [
         `Li, H., Luo, J., Quan, L., Liu, W., &amp; Zhang, F. Science courses are increasingly moving toward integration. <em>Shanghai Education</em>, 2025 (09): 14-16.`
       ]

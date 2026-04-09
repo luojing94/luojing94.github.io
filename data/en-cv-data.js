@@ -5,7 +5,7 @@ window.siteCvData = {
     { title: "Academic Appointment", type: "ul", items: ["2022.08 – Present, Associate Professor, Shanghai Normal University"] },
     { title: "Teaching", type: "ul", items: ["Undergraduate courses: Building Materials, Fundamentals of Steel Structures, History of Natural Science, and interdisciplinary workshops", "Graduate teaching: Earthquake Engineering and interdisciplinary project-based workshops"] },
     { title: "Research Talent Programs & Appointments", type: "ul", full: true, items: ["Shanghai Sailing Talent", "Shicheng Outstanding Young Faculty, Shanghai Normal University", "Member, China Civil Engineering Society", "Committee Member, Timber and Bamboo Committee, Shanghai Civil Engineering Association", "Committee Member, Timber and Composite Structures Committee, China Association for Engineering Construction Standardization"] },
-    { title: "Teaching and Educational Service", type: "ul", full: true, items: ["Nov. 2025 – Jan. 2026, Member of the Young Talent Training Program for Education Policy Consultation Research, Shanghai Education Decision-Making Research Base for High-Quality Educational Development and Governance"] },
+    { title: "Educational Service", type: "ul", full: true, items: ["Nov. 2025 – Jan. 2026, Member of the Young Talent Training Program for Education Policy Consultation Research, Shanghai Education Decision-Making Research Base for High-Quality Educational Development and Governance"] },
     { title: "Research Awards", type: "target", full: true, targetId: "research-awards" },
     { title: "Teaching Awards", type: "target", full: true, targetId: "teaching-awards" },
     { title: "Awards, 2012–2022", type: "target", full: true, targetId: "legacy-awards" },

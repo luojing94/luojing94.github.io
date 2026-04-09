@@ -1,5 +1,5 @@
 window.siteCoursesData = {
-  title: "K12 Engineering and Science Education",
+  title: "K-12 Education and Outreach",
   items: [
     `May 2023, “Layered Peaks, Flying Rainbow,” an integrated large-scale engineering project-based course linking university, secondary, and primary education. Source: <a href="https://tuanwei.shnu.edu.cn/ff/28/c26748a786216/page.htm" target="_blank" rel="noopener">Youth League Committee of Shanghai Normal University</a>`,
     `June 2023, project-based engineering practice on the “Timber Rainbow Bridge” at Shanghai Normal University Affiliated Fengxian Experimental School. Source: <a href="https://www.fengxian.gov.cn/col70/20230602/44180.html" target="_blank" rel="noopener">Fengxian District People’s Government</a>`,
