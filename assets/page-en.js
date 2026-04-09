@@ -130,7 +130,7 @@ function applyEnglishPage() {
 
   var footer = document.querySelector(".site-footer p");
   if (footer) {
-    footer.innerHTML = '© 2026 Jing LUO · Shanghai Normal University &nbsp;|&nbsp; <a href="mailto:luojing94@shnu.edu.cn">luojing94@shnu.edu.cn</a>';
+    footer.innerHTML = '© 2026 Jing LUO · Shanghai Normal University &nbsp;|&nbsp; <span class="email-obfuscated">luojing94 [at] shnu [dot] edu [dot] cn</span>';
   }
 }
 

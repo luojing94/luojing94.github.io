@@ -294,6 +294,10 @@ body {
 }
 .hero-contact-item a { color: var(--gold2); text-decoration: none; }
 .hero-contact-item a:hover { text-decoration: underline; }
+.email-obfuscated {
+  color: var(--gold2);
+  letter-spacing: .02em;
+}
 .contact-icon {
   width: 20px; height: 20px;
   display: flex; align-items: center; justify-content: center;
