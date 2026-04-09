@@ -3,7 +3,6 @@ window.sitePoemsData = {
 <div class="poems-archive">
   <section class="poem-intro">
     <h3>诗集</h3>
-    <p>以下诗作按原文整理呈现。短篇保留凝练节奏，组诗与联章采用整版排布，确保长篇阅读时不被切碎。</p>
   </section>
 
   <article class="poem-panel">
