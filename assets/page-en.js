@@ -7,8 +7,7 @@ function applyEnglishPage() {
     "nav-cv": "CV",
     "nav-works": "Works",
     "nav-poems": "Poetry",
-    "nav-activities": "K-12 Education",
-    "nav-publications": "Publications"
+    "nav-activities": "K-12 Education"
   };
 
   Object.keys(navLabels).forEach(function(id) {
@@ -19,7 +18,7 @@ function applyEnglishPage() {
   var mobileMenu = document.getElementById("mobile-menu");
   if (mobileMenu) {
     var links = mobileMenu.querySelectorAll("a");
-    var labels = ["Home", "CV", "Works", "Poetry", "K-12 Education", "Publications"];
+    var labels = ["Home", "CV", "Works", "Poetry", "K-12 Education"];
     links.forEach(function(link, index) {
       if (index >= 2 && labels[index - 2]) link.textContent = labels[index - 2];
     });
@@ -122,12 +121,6 @@ function applyEnglishPage() {
   if (activitiesHeader) activitiesHeader.textContent = "K-12 Education";
   var activitiesSub = document.querySelector("#sec-activities .page-header .sub");
   if (activitiesSub) activitiesSub.textContent = "Engineering Education, Outreach, and Public Engagement";
-
-  var pubsHeader = document.querySelector("#sec-publications .page-header h2");
-  if (pubsHeader) pubsHeader.textContent = "Publications";
-  var pubsSub = document.querySelector("#sec-publications .page-header .sub");
-  if (pubsSub) pubsSub.textContent = "Journal Articles, Conference Papers, and Education Research";
-
   var footer = document.querySelector(".site-footer p");
   if (footer) {
     footer.innerHTML = '© 2026 Jing LUO · Shanghai Normal University &nbsp;|&nbsp; <span class="email-obfuscated">luojing94 [at] shnu [dot] edu [dot] cn</span>';

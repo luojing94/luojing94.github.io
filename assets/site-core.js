@@ -1,5 +1,5 @@
 (function() {
-  var sectionIds = ["home", "cv", "works", "poems", "activities", "publications"];
+  var sectionIds = ["home", "cv", "works", "poems", "activities"];
   var isEnglish = window.location.pathname.indexOf("/en") === 0;
   var localePrefix = isEnglish ? "/en" : "";
 
@@ -150,14 +150,12 @@
   }
 
   function renderPublicationsSection() {
-    var mainTarget = document.getElementById("publications-content");
     var cvTarget = document.getElementById("cv-publications-content");
-    if (!mainTarget && !cvTarget) return;
+    if (!cvTarget) return;
     if (!window.sitePublicationsData || !Array.isArray(window.sitePublicationsData.groups)) return;
 
     var html = buildPublicationsHtml();
-    if (mainTarget) mainTarget.innerHTML = html;
-    if (cvTarget) cvTarget.innerHTML = html;
+    cvTarget.innerHTML = html;
   }
 
   function buildPublicationsHtml() {

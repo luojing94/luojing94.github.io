@@ -8,8 +8,7 @@
     { id: "cv", zh: "简历", en: "CV" },
     { id: "works", zh: "作品", en: "Works" },
     { id: "poems", zh: "诗歌", en: "Poetry" },
-    { id: "activities", zh: "科普活动", en: "K-12 Education" },
-    { id: "publications", zh: "论文发表", en: "Publications" }
+    { id: "activities", zh: "科普活动", en: "K-12 Education" }
   ];
 
   function toggleMenu() {
