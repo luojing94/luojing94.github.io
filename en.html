@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>罗晶 · Jing LUO</title>
+<title>Jing LUO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
@@ -22,9 +22,9 @@
     <li><a href="#" onclick="showSection('publications')" id="nav-publications">论文发表</a></li>
   </ul>
   <div class="nav-actions">
-    <div class="lang-switch" aria-label="语言切换">
-      <a class="lang-link active" href="index.html">中</a>
-      <a class="lang-link" href="en.html">EN</a>
+    <div class="lang-switch" aria-label="Language switch">
+      <a class="lang-link" href="index.html">中</a>
+      <a class="lang-link active" href="en.html">EN</a>
     </div>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -35,8 +35,8 @@
 <!-- Mobile menu -->
 <div id="mobile-menu">
   <div class="mobile-lang-switch">
-    <a class="lang-link active" href="index.html">中文</a>
-    <a class="lang-link" href="en.html">English</a>
+    <a class="lang-link" href="index.html">中文</a>
+    <a class="lang-link active" href="en.html">English</a>
   </div>
   <a href="#" onclick="showSection('home');toggleMenu()">首页 · Home</a>
   <a href="#" onclick="showSection('cv');toggleMenu()">简历 · CV</a>
@@ -106,7 +106,9 @@
     <div class="sub">Curriculum Vitae</div>
   </div>
   <div class="content-wrap">
-    <div class="cv-grid"></div>
+    <div class="cv-grid">
+
+    </div>
   </div>
 </section>
 
@@ -408,12 +410,12 @@
 </footer>
 
 <!-- ==================== JS ==================== -->
-<script src="data/projects-data.js"></script>
-<script src="data/cv-data.js"></script>
-<script src="data/rewards-data.js"></script>
-<script src="data/courses-data.js"></script>
-<script src="data/publications-data.js"></script>
+<script src="data/en-projects-data.js"></script>
+<script src="data/en-cv-data.js"></script>
+<script src="data/en-rewards-data.js"></script>
+<script src="data/en-courses-data.js"></script>
+<script src="data/en-publications-data.js"></script>
 <script src="assets/site-core.js"></script>
-<script src="assets/page-zh.js"></script>
+<script src="assets/page-en.js"></script>
 </body>
 </html>
