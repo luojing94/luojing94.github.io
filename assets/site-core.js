@@ -164,6 +164,13 @@
     target.innerHTML = html;
   }
 
+  function renderPoemsSection() {
+    var target = document.getElementById("poems-content");
+    if (!target || !window.sitePoemsData || !window.sitePoemsData.html) return;
+
+    target.innerHTML = window.sitePoemsData.html;
+  }
+
   function activateSection(id) {
     document.querySelectorAll(".section").forEach(function(section) {
       section.classList.remove("active");
@@ -207,6 +214,7 @@
     renderAwardsSections();
     renderProjectSections();
     renderCoursesSection();
+    renderPoemsSection();
     renderPublicationsSection();
     configureRoutes();
     showSection(getSectionFromPath(), false);
@@ -218,6 +226,7 @@
     renderProjectSections: renderProjectSections,
     renderAwardsSections: renderAwardsSections,
     renderCoursesSection: renderCoursesSection,
+    renderPoemsSection: renderPoemsSection,
     renderPublicationsSection: renderPublicationsSection,
     showSection: showSection,
     toggleMenu: toggleMenu

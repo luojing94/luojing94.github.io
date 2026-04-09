@@ -564,6 +564,162 @@ body {
   gap: 24px;
 }
 
+.poems-archive {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.poem-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.98) 100%);
+  border-radius: 18px;
+  padding: 30px 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(201,169,110,.16);
+  position: relative;
+  overflow: hidden;
+}
+
+.poem-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(201,169,110,.85), rgba(226,200,154,.2), transparent);
+}
+
+.poem-panel-long {
+  grid-column: 1 / -1;
+}
+
+.poem-panel-dark {
+  background: linear-gradient(145deg, var(--navy) 0%, var(--navy2) 100%);
+  color: rgba(255,255,255,.84);
+  border-color: rgba(201,169,110,.2);
+}
+
+.poem-panel-dark::before {
+  background: linear-gradient(90deg, rgba(226,200,154,.95), rgba(226,200,154,.28), transparent);
+}
+
+.poem-panel-dark .poem-title,
+.poem-panel-dark .poem-subhead,
+.poem-panel-dark .poem-series-item .poem-source {
+  color: var(--gold2);
+}
+
+.poem-panel-dark .poem-body,
+.poem-panel-dark .poem-preface,
+.poem-panel-dark .poem-note,
+.poem-panel-dark .poem-sequence-item {
+  color: rgba(255,255,255,.82);
+}
+
+.poem-panel-dark .poem-series-item {
+  border-color: rgba(255,255,255,.08);
+}
+
+.poem-panel-dark .poem-sequence-item {
+  border-color: rgba(255,255,255,.1);
+  background: rgba(255,255,255,.04);
+}
+
+.poem-intro {
+  grid-column: 1 / -1;
+  padding: 28px 30px;
+  background: linear-gradient(135deg, rgba(26,39,68,.98), rgba(36,50,85,.96));
+  color: rgba(255,255,255,.82);
+  border-radius: 22px;
+  box-shadow: var(--shadow2);
+  position: relative;
+  overflow: hidden;
+}
+
+.poem-intro::after {
+  content: '詩';
+  position: absolute;
+  right: 22px;
+  top: -18px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 7rem;
+  color: rgba(226,200,154,.08);
+  line-height: 1;
+}
+
+.poem-intro h3 {
+  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  color: var(--gold2);
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.poem-intro p {
+  max-width: 60ch;
+  line-height: 1.9;
+  font-size: .92rem;
+}
+
+.poem-subhead {
+  font-family: 'Noto Serif SC', serif;
+  font-size: .98rem;
+  color: var(--navy);
+  margin: 18px 0 10px;
+}
+
+.poem-subhead:first-child {
+  margin-top: 0;
+}
+
+.poem-source {
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.poem-preface {
+  font-size: .88rem;
+  color: var(--muted);
+  line-height: 1.9;
+  white-space: pre-line;
+  margin-bottom: 16px;
+}
+
+.poem-series {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.poem-series-item {
+  padding: 18px 18px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(250,249,245,.72);
+}
+
+.poem-series-item .poem-source {
+  margin-bottom: 8px;
+}
+
+.poem-sequence {
+  display: grid;
+  gap: 12px;
+}
+
+.poem-sequence-item {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(240,237,230,.7);
+  border: 1px solid rgba(201,169,110,.16);
+  font-family: 'Noto Serif SC', serif;
+  font-size: .9rem;
+  line-height: 2;
+  color: #444;
+}
+
 .poem-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -1153,7 +1309,9 @@ body {
   .activity-card { flex-direction: column; }
   .activity-img { width: 100%; height: 180px; }
 
-  .poems-grid { grid-template-columns: 1fr; }
+  .poems-grid,
+  .poems-archive,
+  .poem-series { grid-template-columns: 1fr; }
   .poem-card.xiaohan { grid-column: 1; grid-template-columns: 1fr 1fr; }
 
   .project-hero-section,
