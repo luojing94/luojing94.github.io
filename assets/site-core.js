@@ -1,4 +1,10 @@
 (function() {
+  function normalizeRootPath() {
+    if (window.location.pathname === "/index.html") {
+      window.history.replaceState(null, "", "/");
+    }
+  }
+
   function renderProjectList(targetId, items) {
     var target = document.getElementById(targetId);
     if (!target || !Array.isArray(items)) return;
@@ -128,6 +134,8 @@
   }
 
   function initPage(options) {
+    normalizeRootPath();
+
     if (options && typeof options.beforeRender === "function") {
       options.beforeRender();
     }
