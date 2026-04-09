@@ -1,9 +1,7 @@
 (function() {
   var sectionIds = ["home", "cv", "works", "poems", "activities", "publications"];
-
-  function getBasePath() {
-    return window.location.pathname.indexOf("/en") === 0 ? "/en/" : "/";
-  }
+  var isEnglish = window.location.pathname.indexOf("/en") === 0;
+  var localePrefix = isEnglish ? "/en" : "";
 
   function normalizeRootPath() {
     if (window.location.pathname === "/index.html") {
@@ -12,17 +10,61 @@
     if (window.location.pathname === "/en.html" || window.location.pathname === "/en/index.html") {
       window.history.replaceState(null, "", "/en/" + window.location.hash);
     }
+    sectionIds.forEach(function(id) {
+      var plainPath = (isEnglish ? "/en/" : "/") + (id === "home" ? "" : id);
+      var indexPath = plainPath.replace(/\/$/, "") + "/index.html";
+      if (window.location.pathname === plainPath && id !== "home") {
+        window.history.replaceState(null, "", plainPath + "/" + window.location.hash);
+      }
+      if (window.location.pathname === indexPath) {
+        window.history.replaceState(null, "", plainPath + (plainPath.endsWith("/") ? "" : "/") + window.location.hash);
+      }
+    });
   }
 
-  function getSectionFromLocation() {
+  function getSectionFromPath() {
+    var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    if (path === "/" || path === "/en") return "home";
+
+    var normalized = isEnglish ? path.replace(/^\/en/, "") || "/" : path;
+    normalized = normalized.replace(/^\/+/, "");
+
+    if (sectionIds.indexOf(normalized) !== -1) return normalized;
+
     var hash = window.location.hash.replace(/^#/, "");
     if (sectionIds.indexOf(hash) !== -1) return hash;
     return "home";
   }
 
   function buildSectionUrl(id) {
-    var base = getBasePath();
-    return id === "home" ? base : base + "#" + id;
+    return id === "home" ? (localePrefix || "/") + (localePrefix ? "/" : "") : localePrefix + "/" + id + "/";
+  }
+
+  function buildLanguageUrl(targetEnglish, id) {
+    var prefix = targetEnglish ? "/en" : "";
+    if (id === "home") return prefix ? prefix + "/" : "/";
+    return prefix + "/" + id + "/";
+  }
+
+  function setHref(id, href) {
+    var links = document.querySelectorAll('[data-route="' + id + '"]');
+    links.forEach(function(link) {
+      link.setAttribute("href", href);
+    });
+  }
+
+  function configureRoutes() {
+    sectionIds.forEach(function(id) {
+      setHref(id, buildSectionUrl(id));
+    });
+
+    var currentSection = getSectionFromPath();
+    document.querySelectorAll('[data-lang="zh"]').forEach(function(link) {
+      link.setAttribute("href", buildLanguageUrl(false, currentSection));
+    });
+    document.querySelectorAll('[data-lang="en"]').forEach(function(link) {
+      link.setAttribute("href", buildLanguageUrl(true, currentSection));
+    });
   }
 
   function renderProjectList(targetId, items) {
@@ -143,7 +185,7 @@
     activateSection(id);
 
     if (updateUrl !== false) {
-      window.history.pushState({ section: id }, "", buildSectionUrl(id));
+      window.location.href = buildSectionUrl(id);
     }
 
     return false;
@@ -152,14 +194,6 @@
   function toggleMenu() {
     var menu = document.getElementById("mobile-menu");
     if (menu) menu.classList.toggle("open");
-  }
-
-  function bindNavigationPrevention() {
-    document.querySelectorAll('.nav-links a[href="#"], #mobile-menu a[href="#"]').forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-      });
-    });
   }
 
   function initPage(options) {
@@ -174,16 +208,8 @@
     renderProjectSections();
     renderCoursesSection();
     renderPublicationsSection();
-    bindNavigationPrevention();
-    showSection(getSectionFromLocation(), false);
-
-    window.addEventListener("hashchange", function() {
-      showSection(getSectionFromLocation(), false);
-    });
-
-    window.addEventListener("popstate", function() {
-      showSection(getSectionFromLocation(), false);
-    });
+    configureRoutes();
+    showSection(getSectionFromPath(), false);
   }
 
   window.SiteCore = {
