@@ -154,7 +154,7 @@
     setText("#project-series-label", locale === "en" ? "Collection" : "归档");
     setText("#project-series-value", locale === "en" ? "Selected Design Works" : "设计作品精选");
     setText("#project-image-heading", locale === "en" ? "Project Plate" : "项目图版");
-    setText("#project-image-note", locale === "en" ? "The page presents the principal visual plate preserved from the original project archive." : "本页展示从原始项目档案中保留的主视觉图版。");
+    setText("#project-image-note", "");
     setText("#project-back-link", locale === "en" ? "Back to Works" : "返回作品集");
     setText("#project-lang-link", locale === "en" ? "中文页面" : "English Version");
 
