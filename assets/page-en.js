@@ -78,6 +78,13 @@ function applyEnglishPage() {
     "An ecological walking system for Dayang Mountain Forest Park that reframes the relationship between body, path, and landscape.",
     "A village-scale strategy rooted in local culture and industry, balancing conservation with rural revitalization."
   ];
+  var workRoutes = [
+    "/en/stonehouse/",
+    "/en/tinyhouse/",
+    "/en/zhonganbridge/",
+    "/en/dayangmountain/",
+    "/en/fengxiancountry/"
+  ];
 
   document.querySelectorAll(".work-card").forEach(function(card, index) {
     var title = card.querySelector("h3");
@@ -86,6 +93,7 @@ function applyEnglishPage() {
     if (title && workTitles[index]) title.textContent = workTitles[index];
     if (body && workBodies[index]) body.textContent = workBodies[index];
     if (link) link.textContent = "View project →";
+    if (workRoutes[index]) card.href = workRoutes[index];
   });
 
   var poemsHeader = document.querySelector("#sec-poems .page-header h2");
