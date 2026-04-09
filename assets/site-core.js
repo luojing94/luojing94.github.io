@@ -150,9 +150,17 @@
   }
 
   function renderPublicationsSection() {
-    var target = document.getElementById("publications-content");
-    if (!target || !window.sitePublicationsData || !Array.isArray(window.sitePublicationsData.groups)) return;
+    var mainTarget = document.getElementById("publications-content");
+    var cvTarget = document.getElementById("cv-publications-content");
+    if (!mainTarget && !cvTarget) return;
+    if (!window.sitePublicationsData || !Array.isArray(window.sitePublicationsData.groups)) return;
 
+    var html = buildPublicationsHtml();
+    if (mainTarget) mainTarget.innerHTML = html;
+    if (cvTarget) cvTarget.innerHTML = html;
+  }
+
+  function buildPublicationsHtml() {
     var html = "";
     window.sitePublicationsData.groups.forEach(function(group) {
       html += '<div class="pub-year-group"><h3>' + group.title + "</h3>";
@@ -161,7 +169,7 @@
       });
       html += "</div>";
     });
-    target.innerHTML = html;
+    return html;
   }
 
   function renderPoemsSection() {
