@@ -1,8 +1,28 @@
 (function() {
+  var sectionIds = ["home", "cv", "works", "poems", "activities", "publications"];
+
+  function getBasePath() {
+    return window.location.pathname.indexOf("/en") === 0 ? "/en/" : "/";
+  }
+
   function normalizeRootPath() {
     if (window.location.pathname === "/index.html") {
       window.history.replaceState(null, "", "/");
     }
+    if (window.location.pathname === "/en.html" || window.location.pathname === "/en/index.html") {
+      window.history.replaceState(null, "", "/en/" + window.location.hash);
+    }
+  }
+
+  function getSectionFromLocation() {
+    var hash = window.location.hash.replace(/^#/, "");
+    if (sectionIds.indexOf(hash) !== -1) return hash;
+    return "home";
+  }
+
+  function buildSectionUrl(id) {
+    var base = getBasePath();
+    return id === "home" ? base : base + "#" + id;
   }
 
   function renderProjectList(targetId, items) {
@@ -102,7 +122,7 @@
     target.innerHTML = html;
   }
 
-  function showSection(id) {
+  function activateSection(id) {
     document.querySelectorAll(".section").forEach(function(section) {
       section.classList.remove("active");
     });
@@ -117,6 +137,15 @@
     if (nav) nav.classList.add("active");
 
     window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
+  function showSection(id, updateUrl) {
+    activateSection(id);
+
+    if (updateUrl !== false) {
+      window.history.pushState({ section: id }, "", buildSectionUrl(id));
+    }
+
     return false;
   }
 
@@ -146,6 +175,15 @@
     renderCoursesSection();
     renderPublicationsSection();
     bindNavigationPrevention();
+    showSection(getSectionFromLocation(), false);
+
+    window.addEventListener("hashchange", function() {
+      showSection(getSectionFromLocation(), false);
+    });
+
+    window.addEventListener("popstate", function() {
+      showSection(getSectionFromLocation(), false);
+    });
   }
 
   window.SiteCore = {

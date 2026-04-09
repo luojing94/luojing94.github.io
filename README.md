@@ -5,7 +5,8 @@
 文件说明：
 
 - `index.html`：中文版首页
-- `en.html`：英文版首页
+- `en/index.html`：英文版首页
+- `en.html`：兼容旧链接的英文跳转页
 - `assets/styles.css`：中英文共用样式
 - `assets/site-core.js`：中英文共用交互与渲染逻辑
 - `assets/page-zh.js`：中文版初始化脚本
